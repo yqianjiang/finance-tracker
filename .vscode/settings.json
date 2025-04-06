@@ -1,0 +1,37 @@
+{
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsx-tags]":{
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "biome.lspBin": "common/autoinstallers/rush-lint/node_modules/.bin/biome",
+  "typescript.tsdk": "toosl/typescript-config/node_modules/typescript/lib",
+}

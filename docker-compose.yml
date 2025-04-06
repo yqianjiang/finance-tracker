@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  finance-tracker:
+    build: .
+    image: finance-tracker
+    container_name: finance-tracker
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3009/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      update_config:
+        order: start-first  # 先启动新容器，再停止旧容器
+        parallelism: 1
+        delay: 10s
+    ports:
+      - "3009:3009"
+    networks:
+      - game-backend
+
+networks:
+  game-backend:
+    external: true
